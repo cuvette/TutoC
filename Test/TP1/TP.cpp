@@ -75,7 +75,7 @@ int main(int argc, char *arv[])
 		} while (enteredNumber != mysteryNumber);
 
 		//Recommencer si le joueur le souhaite
-		if (enteredNumber = mysteryNumber)
+		if (enteredNumber == mysteryNumber)
 		{
 			printf("Bravo, vous avez trouve le nombre mystere en %d coups !\Continuer a jouer ?\n0- NON\n1- OUI\n", numberOfTry, continueToPlay);
 			scanf_s("%d", &continueToPlay);
