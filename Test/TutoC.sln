@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{D5CCAFFC-5326-4FBD-8F43-E9055DD1904C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.0 Test", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{D5CCAFFC-5326-4FBD-8F43-E9055DD1904C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "variables", "..\variables\variables\variables.vcxproj", "{59D30738-B455-4856-9D69-F7EC1B98E7DC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.1 variables", "..\variables\variables\variables.vcxproj", "{59D30738-B455-4856-9D69-F7EC1B98E7DC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "menus", "menus\menus.vcxproj", "{F56FC9C3-3CB5-4998-8706-74CB5C34AC19}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.2 menus", "menus\menus.vcxproj", "{F56FC9C3-3CB5-4998-8706-74CB5C34AC19}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boucles", "Boucles\Boucles.vcxproj", "{BFE4BB25-8D52-4C32-9A05-BD913CF231E3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.3 Boucles", "Boucles\Boucles.vcxproj", "{BFE4BB25-8D52-4C32-9A05-BD913CF231E3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TP1", "TP1\TP1.vcxproj", "{87C146EF-DD80-459F-8472-FEE065EEDF9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.4 TP1", "TP1\TP1.vcxproj", "{87C146EF-DD80-459F-8472-FEE065EEDF9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
