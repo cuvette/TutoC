@@ -1,6 +1,10 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 
 int main(int argc, char *arv[])
 {
@@ -14,7 +18,7 @@ int main(int argc, char *arv[])
 		do
 		{
 			printf("Choisissez un niveau de difficulte.\n1- Nombre mystere entre 1 et 100.\n2- Nombre mystere entre 1 et 1000\n3- Nombre mystere entre 1 et 10000.\n");
-			scanf_s("%d", &difficulty);
+			scanf("%d", &difficulty);
 			switch (difficulty)
 			{
 			case 1:
@@ -37,16 +41,16 @@ int main(int argc, char *arv[])
 
 		//1 ou 2 joueurs
 		printf("0- Appuyez sur 0 pour le mode 1 joueur\n1- Appuyez sur 1 pour le mode 2 joueurs\n");
-		scanf_s("%d", &twoPlayers);
+		scanf("%d", &twoPlayers);
 
 		if (twoPlayers)
 		{
 			printf("Joueur 1 entrez un nombre entre %d et %d.\n", MIN, maxValue);
-			scanf_s("%d", &mysteryNumber);
+			scanf("%d", &mysteryNumber);
 			while (mysteryNumber < MIN || mysteryNumber > maxValue)
 			{
 				printf("Entrez une valeur correcte SVP.\n");
-				scanf_s("%d", &mysteryNumber);
+				scanf("%d", &mysteryNumber);
 			}
 			system("cls"); // effacer le texte de la console pour que le joueur 2 ne voit pas le nombre.
 		}
@@ -60,7 +64,7 @@ int main(int argc, char *arv[])
 		printf("Le nombre mystere est entre 1 et %d.\nEntrez un nombre.\n", maxValue);
 		do
 		{
-			scanf_s("%d", &enteredNumber);
+			scanf("%d", &enteredNumber);
 			numberOfTry++;
 
 			if (enteredNumber > mysteryNumber)
@@ -72,16 +76,16 @@ int main(int argc, char *arv[])
 			{
 				printf("%d est plus petit que le nombre mystere\n", enteredNumber);
 			}
+			else
+			{
+				printf("Bravo, vous avez trouve le nombre mystere en %d coups !\nContinuer a jouer ?\n0- NON\n1- OUI\n", numberOfTry);
+				scanf("%d", &continueToPlay);
+				mysteryNumber = (rand() % (maxValue - MIN + 1)) + MIN;
+				numberOfTry = 0;
+			}
+
 		} while (enteredNumber != mysteryNumber);
 
-		//Recommencer si le joueur le souhaite
-		if (enteredNumber == mysteryNumber)
-		{
-			printf("Bravo, vous avez trouve le nombre mystere en %d coups !\Continuer a jouer ?\n0- NON\n1- OUI\n", numberOfTry, continueToPlay);
-			scanf_s("%d", &continueToPlay);
-			mysteryNumber = (rand() % (maxValue - MIN + 1)) + MIN;
-			numberOfTry = 0;
-		}
 	}
 	return 0;
 }

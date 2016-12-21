@@ -1,3 +1,6 @@
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
 #include <stdio.h>
 #include<stdlib.h>
 
@@ -6,7 +9,7 @@ int main(int argc, char *argv[])
 	int choixMenu = 0;
 
 	printf("=== Menu ===\n1. Royal Deluxe\n2- Mc Deluxe\n3- Mc Bacon\n4- Big Mac\nVotre choix ?");
-	scanf_s("%d", &choixMenu);
+	scanf("%d", &choixMenu);
 	switch (choixMenu)
 	{
 	case 1:
